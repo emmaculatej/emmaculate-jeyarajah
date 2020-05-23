@@ -1,15 +1,14 @@
 <template>
   <div class="jumbotron">
-    <h1>This is a cat</h1>
+    <h1>This is a Resume</h1>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
 
-@Component
-export default class Experience extends Vue {
-}
+export default {
+  name: 'Resume',
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

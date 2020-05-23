@@ -8,11 +8,13 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Nav from './components/Nav.vue';
+import Resume from './components/Resume.vue';
 
 
 @Component({
   components: {
     Nav,
+    Resume,
   },
 })
 export default class App extends Vue {}

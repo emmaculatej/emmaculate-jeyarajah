@@ -4,8 +4,10 @@
     <nav>
       <router-link v-for="routes in links" 
       v-bind:key="routes.id"
-      :to="`${routes.page}`">{{routes.text}}</router-link>
+      :to="`${routes.page}`">{{routes.text}} </router-link>
     </nav>
+    <button><a target="_blank">Download</a></button> 
+
   </div>
 </template>
 
@@ -17,7 +19,7 @@ export default {
       links: [
         {
           id: 0,
-          text: 'Home ',
+          text: 'Home',
           page: '/',
         },
         {
@@ -27,8 +29,8 @@ export default {
         },
         {
             id: 2,
-            text: 'Experience',
-            page: '/Experience',
+            text: 'Resume',
+            page: '/Resume',
         },
       ],
     };
@@ -36,3 +38,6 @@ export default {
 };
 </script>
  
+ <<style scoped>
+ 
+ </style>

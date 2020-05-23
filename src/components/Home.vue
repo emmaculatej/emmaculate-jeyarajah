@@ -1,17 +1,18 @@
 <template>
   <div class="jumbotron">
-    <h1>{{ msg }}</h1>
-    
+    <h1>{{welcome}}</h1>
   </div>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
-
-@Component
-export default class Home extends Vue {
-  @Prop() private msg!: string;
-}
+export default {
+  name: 'Home',
+  data() {
+    return {
+      welcome : 'Emma Jeyarajah',
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
